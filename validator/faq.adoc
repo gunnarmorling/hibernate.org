@@ -133,7 +133,7 @@ Set<ConstraintDescriptor<?>> propertyConstraints =
 
 This is caused by a http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6512707[bug] in the javac compiler and occurs when the compiled project contains an annotation type with an enum-typed member which has a default value. As workaround either specify the default value using its fully qualified name or add https://github.com/emmanuelbernard/APCleaner[this annotation processor] to your project. See also http://opensource.atlassian.com/projects/hibernate/browse/HV-498[HV-498] for more details.
 
-=== How can I avoid the error "HV000150: The constraint 'javax.validation.constraints.DecimalMin' defines multiple validators for the type 'interface javax.money.MonetaryAmount'. Only one is allowed."
+=== How can I avoid the error "HV000150: The constraint 'j.v.c.DecimalMin' defines multiple validators for the type 'interface javax.money.MonetaryAmount'. Only one is allowed."
 
 You'll get this error with Hibernate Validator 5.4 and later if you have the dependency _org.zalando:money-validation_ on your classpath.
 The _money-validation_ project has been contributed to the Hibernate Validator code base,
